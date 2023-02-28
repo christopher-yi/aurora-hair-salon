@@ -1,0 +1,963 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html, body {width: auto!important; overflow-x: hidden!important}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+}
+/******************************************
+/* HEADER AND NAV
+/*******************************************/
+header {
+    height: 6rem;
+    background-color: rgb(38, 38, 39);
+}
+
+nav *{
+    list-style-type: none;
+    text-align: center;
+    color: rgb(179, 120, 194);
+}
+
+span.aurora{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+li{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+nav *:hover{
+    color: rgb(127, 168, 214);
+    transition: 0.7s ease;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    height: 70px;
+    width: 2.5rem;
+    padding-top: 2rem;
+}
+
+.bar{
+    display: block;
+    width: 2.5rem;
+    height: .3rem;
+    margin: .5rem 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/******************************************
+/* MAIN SECTION ONE
+/*******************************************/
+main{
+    clear: both;
+    height: 130rem;
+    background-color: rgb(51, 53, 70)
+}
+
+section.one{
+    height: 100rem;
+    background-image: url(stickers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    border-radius: 0 0 15% 0;
+}
+
+section.one{
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+section.one h1{
+    color: white;
+    font-size: 9rem;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-left: 10rem;
+
+}
+
+section.one h2{
+    color: white;
+    font-size: 2rem;
+    padding-left: 15rem;
+    padding-top: 2rem;
+}
+
+section.one h1:first-child{
+    padding-top: 35rem;
+}
+
+span.book{
+    float: left;
+    font-weight: 600;
+    margin-top: .5%;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 25rem;
+    margin-top: 7rem;
+    padding: 1.5rem 1rem;
+    background-color: black;
+}
+
+main div{
+    height: 30rem;
+    width: 25rem;
+    background-color: black;
+    margin-top: 10rem;
+    position: absolute;
+    margin-left: 18rem;
+    top: 65%;
+}
+
+section.beauticians{
+    float: left;
+    width: 40%;
+    margin-top: 4rem;
+    position: relative;
+}
+
+section.services{
+    float: left;
+    width: 20%;
+    margin-top: 4rem;
+    position: relative;
+}
+
+section.products{
+    float: left;
+    width: 40%;
+    margin-top: 4rem;
+    position: relative;
+}
+
+section.beauticians *, section.services *, section.products *{
+    text-align: center;
+}
+
+section.beauticians img{
+    width: 7rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.services img{
+    width: 7rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.products img{
+    width: 7rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.beauticians h3, section.services h3, section.products h3{
+    font-size: 2.5rem;
+    color: rgb(163,139,95);
+}
+
+section.beauticians p, section.services p, section.products p{
+    font-size: 2rem;
+    color: white;
+}
+
+section.beauticians p, section.products p{
+    padding: 0 25%;
+}
+
+/******************************************
+/* SECTION TWO
+/*******************************************/
+section.two{
+    height: 50rem;
+    background-color: rgb(51,53,70);
+}
+
+section.two section{
+    width: 45%;
+    float: left;
+}
+
+section.two section + section{
+    width: 55%;
+}
+
+section.two section:first-child{
+    padding-left: 5%;
+}
+
+section.two section:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+}
+
+section.two h2{
+    font-size: 4rem;
+    margin-top: 12rem;
+    color: rgb(163,139,95);
+}
+
+section.two p{
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+section.two a{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    padding: 1.3rem 2rem;
+    margin-top: 1rem;
+}
+
+section.two div{
+    background-image: url(lavender.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    width: 80%;
+    height: 35rem;
+}
+
+section.two img{
+    width: 10%;
+    padding: 0;
+    margin: 27% 45%;
+    
+}
+
+/******************************************
+/* SECTION THREE
+/*******************************************/
+section.three{
+    height: 70rem;
+    padding-top: 10rem;
+    background-color: rgb(49, 48, 48);
+}
+
+.gallery {
+    width: 100%;
+  }
+  
+  .gallery-container {
+    align-items: center;
+    display: flex;
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+  
+  .gallery-item {
+    height: 150px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+    z-index: 0;
+  }
+  
+  .gallery-item-1 {
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+    width: auto;
+  }
+  
+  .gallery-item-2,
+  .gallery-item-4 {
+    height: 200px;
+    opacity: 1;
+    width: auto;
+    z-index: 1;
+  }
+  
+  .gallery-item-2 {
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item-3 {
+    height: 100%;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    z-index: 2;
+  }
+  
+  .gallery-item-4 {
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item-5 {
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+    width: auto;
+  }
+  
+  .gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 40px 0;
+    gap: 20%;
+  }
+  
+  .gallery-controls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 0 12px;
+    text-transform: capitalize;
+    color: white;
+  }
+  
+  .gallery-controls button:focus {
+    outline: none;
+  }
+  
+  .gallery-controls-previous {
+    position: relative;
+  }
+  
+  .gallery-controls-previous::before {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    left: -10px;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 4px;
+
+  }
+  
+  .gallery-controls-previous:hover::before {
+    left: -18px;
+  }
+  
+  .gallery-controls-next {
+    position: relative;
+    color: white;
+  }
+  
+  .gallery-controls-next::before {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    padding: 2px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 4px;
+
+  }
+  
+  .gallery-controls-next:hover::before {
+    right: -18px;
+  }
+  
+  .gallery-nav {
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .gallery-nav li {
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+  }
+  
+  .gallery-nav li.gallery-item-selected {
+    background: #555;
+  }
+
+
+/******************************************
+/* SECTION FOUR
+/*******************************************/
+section.four{
+    height: 70rem;
+    background-color: rgb(49, 48, 48);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+section.four div{
+    height: 50rem;
+    background-image: url(cottoncandy.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 20%;
+    width: 75%;
+    align-self: center;
+}
+
+section.four div *{
+    display: inline-block;
+    margin-left: 5rem;
+}
+
+section.four span:first-child{
+    font-size: 2.5rem;
+    padding-top: 10rem;
+    color: white;
+    display: block;
+}
+
+section.four span:nth-child(2){
+    color: white;
+    font-size: 7rem;
+}
+
+section.four span:nth-child(3){
+    color: white;
+    font-size: 4rem;
+    margin-left: 1rem;
+    margin-right: 30%;
+}
+
+section.four span:nth-child(4){
+    color: white;
+    font-size: 4rem;
+    display: block;
+}
+
+section.four a{
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+/******************************************
+/* SECTION FIVE
+/*******************************************/
+section.five{
+    height: 120rem;
+    position: relative;
+    background-color: rgb(51,53,70);
+}
+
+section.five h2{
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    padding: 8rem 0;
+    color: rgb(163,139,95);
+
+}
+
+section.five span{
+    display: block;
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 0;
+    margin-bottom: 10rem;
+}
+
+section.left{
+    float: left;
+    width: 32.5%;
+    margin-left: 7.5%;
+}
+
+section.middle{
+    float: left;
+    width: 20%;
+}
+
+section.right{
+    float: left;
+    width: 32.5%;
+
+}
+
+section.left *, section.middle *, section.right *{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.left div{
+    height: 30rem;
+    width: 30rem;
+    margin-bottom: 2rem;
+    background-image: url(yellow.PNG);
+    background-size: cover;
+    background-position: 50% 0%;
+    position: relative;
+}
+
+section.left div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+    transition: transform 200ms ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+section.left div:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+section.left div + div{
+    height: 60rem;
+    width: 30rem;
+    background-image: url(rainbow.PNG);
+    background-size: cover;
+    background-position: 53% 30%;
+}
+
+section.middle div{
+    height: 60rem;
+    width: 30rem;
+    margin-bottom: 2rem;
+    background-image: url(shiny.PNG);
+    background-size: cover;
+    background-position: 53% 30%;
+    position: relative;
+}
+
+section.middle div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+    transition: transform 200ms ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+section.middle div:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+section.middle div + div{
+    height: 30rem;
+    width: 30rem;
+    background-image: url(pixie.jpg);
+    background-color: rgba(43, 43, 43, 0.322);
+}
+
+section.right div{
+    height: 30rem;
+    width: 30rem;
+    margin-bottom: 2rem;
+    background-image: url(glow.PNG);
+    background-size: cover;
+    position: relative;
+}
+
+section.right div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+    transition: transform 200ms ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+section.right div:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+section.right div + div{
+    height: 60rem;
+    width: 30rem;
+    background-image: url(braid.PNG);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/******************************************
+/* six
+/*******************************************/
+.six{
+    height: 6rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    clear: both;
+}
+
+.six h3{
+    color: white;
+    font-size: 2rem;
+}
+
+.six img{
+    width: 4rem;
+}
+
+.six img.fb{
+    width: 3.5rem;
+    padding-bottom: .5rem;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media screen and (max-width: 1161px){
+    section.five section{
+        width: 33.3333%;
+    }
+    section.left{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1161px){
+    section.three section{
+        width: 100%;
+    }
+
+    section.three{
+        height: 70rem;
+    }
+}
+
+
+@media screen and (max-width: 1001px){
+    section.two{
+        height: 85rem;
+    }
+
+    section.two section{
+        width: 100%;
+        padding-right: 5%;
+    }
+
+    section.two section + section{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 915px){
+    section.five section{
+        width: 100%;
+        background-color: rgb(51,53,70);
+    }
+
+    section.two{
+        height: 90rem;
+    }
+
+    section.four span:nth-child(3) {
+        color: white;
+        font-size: 4rem;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+    section.two section{
+        width: 100%;
+    }
+
+    section.six{
+        clear: both;
+    }
+}
+
+
+@media(max-width: 775px){
+    header{
+        width: 100%;
+        z-index: 1;
+        position: fixed;
+    }
+    
+    section.one{
+        height: 110rem;
+        background-image: url(stickers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        border-radius: 0 0 15% 0;
+        position: relative;
+        top: 60px;
+    }
+
+    section.beauticians, section.services, section.products{
+        padding-top: 5rem;
+    }
+
+    section.one h1{
+        font-size: 7rem;
+        padding-left: 5%;
+    }
+
+    section.one h2{
+        font-size: 1.5rem;
+        padding-left: 7%;
+    }
+
+    span.book{
+        margin-left: 10%;
+    }
+
+    section.two{
+        height: 100rem;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    section.four div{
+        background-position: center;
+    }
+
+    section.beauticians{
+        width: 100%;
+    }
+
+    section.services{
+        width: 100%;
+        padding: 0 25%;
+    }
+
+    section.products {
+        width: 100%;
+    }
+    
+    section.two {
+        height: 140rem;
+    }
+}
+
+@media(max-width: 631px){
+    section.four span:nth-child(3) {
+        margin-left: 5rem;
+    }
+}
+
+@media(max-width: 580px){
+    section.one h1{
+        font-size: 6rem;
+    }
+
+    section.beauticians{
+        width: 100%;
+    }
+
+    section.services{
+        width: 100%;
+    }
+
+    section.products {
+        width: 100%;
+    }
+    
+    section.two {
+        height: 140rem;
+    }
+}
+
+@media(max-width: 480px){
+    section.one h1{
+        font-size: 5rem;
+    }
+
+    section.two{
+        height: 145rem;
+        padding: 0 5%; 
+    }
+
+    section.services{
+        padding: 0;
+    }
+
+    section.beauticians p, section.services p, section.products p {
+        padding: 0px 3%;
+    }
+
+    section.four span:first-child {
+        padding-top: 5rem;
+    }
+
+    section.four div *{
+        margin-left: 1rem;
+    }
+    section.four span:nth-child(3) {
+        margin-left: 1rem;
+    }
+}
+
+@media(max-width: 400px){
+    section.one h1{
+        font-size: 4rem;
+    }
+
+    section.one h2{
+        font-size: 1.2rem;
+    }
+
+
+}
